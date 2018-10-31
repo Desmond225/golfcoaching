@@ -30,3 +30,28 @@
     transform: rotate(360deg);
   }
 }
+
+.scoreSubmitSection {
+  text-align: center;
+  padding: 1px;
+  margin-top: 1%;
+  height: 400px;
+  width: 1600px;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
+  background-color: grey;
+
+}
+
+.resultList {
+  height: 600px;
+  text-align: center;
+  padding: 1px;
+  margin-top: 1%;
+  background-color: grey;
+  width: 200px;
+  float: right;
+  margin-right: 1%;
+
+}
