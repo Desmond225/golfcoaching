@@ -1,6 +1,6 @@
-const todos = (state = [], action) => {
+const scores = (state = [], action) => {
     switch (action.type) {
-        case 'ADD_TODO':
+        case 'ADD_SCORE':
         return [
             ...state,
             {
@@ -9,7 +9,7 @@ const todos = (state = [], action) => {
                 completed: false
             }
         ]
-        case 'TOGGLE_TODO':
+        case 'TOGGLE_SCORE':
         return state
 
         default: 
@@ -17,4 +17,4 @@ const todos = (state = [], action) => {
     }
 }
 
-export default todos
+export default scores

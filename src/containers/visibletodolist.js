@@ -1,16 +1,16 @@
 import {connect} from 'react-redux';
-import {toggleTodo} from '../actions';
-import TodoList from '../components/todolist'
+import {toggleScore} from '../actions';
+import ScoreList from '../components/todolist'
 import {VisibilityFilter} from '../actions';
 
-const getVisibleTodos = (todos, filter) => {
+const getVisibleScores = (scores, filter) => {
     switch(filter) {
         case VisibilityFilter.SHOW_ALL:
-        return todos
+        return scores
         case VisibilityFilter.SHOW_COMPLETED:
-        return todos.filter(t => t.completed)
+        return scores.filter(t => t.completed)
         case VisibilityFilter.SHOW_ACTIVE:
-        return todos.filter(t => !t.completed)
+        return scores.filter(t => !t.completed)
         default:
         console.log('oops')
 
@@ -18,11 +18,11 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = state => ({
-    todos:getVisibleTodos(state.todos, state.visibilityFilter)
+    scores:getVisibleScores(state.scores, state.visibilityFilter)
 })
 
 const mapDispatchToProps = dispatch => ({
-    toggleTodo: id => dispatch(toggleTodo(id))
+    toggleScore: id => dispatch(toggleScore(id))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
+export default connect(mapStateToProps, mapDispatchToProps)(ScoreList)

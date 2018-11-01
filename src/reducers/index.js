@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import todos from './todos';
+import scores from './todos';
 import visibilityFilter from './visibilityfilter';
 
 export default combineReducers({
-    todos,
+    scores,
     visibilityFilter
 })

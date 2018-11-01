@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Todo from './todo';
-import { toggleTodo } from '../actions';
+import Score from './todo';
+import { toggleScore } from '../actions';
 
-const TodoList = ({todos }) => (
+const ScoreList = ({scores }) => (
     <ul>
-        {todos.map(todo => 
-            <Todo
-            key={todo.id}
-            {...todo}
+        {scores.map(score => 
+            <Score
+            key={score.id}
+            {...score}
             // onClick={() => toggleTodo(todo.id)}
             />
         )}
     </ul>
 )
 
-TodoList.propTypes = {
-    todos: PropTypes.arrayOf(PropTypes.shape({
+ScoreList.propTypes = {
+    scores: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
       completed: PropTypes.bool.isRequired,
       text: PropTypes.string.isRequired
     }).isRequired).isRequired,
-    toggleTodo: PropTypes.func.isRequired
+    toggleScore: PropTypes.func.isRequired
   }
 
-export default TodoList
+export default ScoreList

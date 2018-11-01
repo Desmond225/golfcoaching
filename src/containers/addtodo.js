@@ -1,25 +1,25 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { addTodo } from '../actions';
+import { addScore } from '../actions';
 
-const AddTodo = ({dispatch}) => {
+const AddScore = ({dispatch}) => {
     let input
     return (
         <div>
             <form
             onSubmit={e => {
                 e.preventDefault()
-                dispatch(addTodo(input.value))
+                dispatch(addScore(input.value))
                 input.value = ''
             }}>
                 <input ref={node => input = node}/>
 
                 <button type="submit">
-                    add todo
+                    add score
                 </button>
             </form>
         </div>
     )
 }
 
-export default connect()(AddTodo)
+export default connect()(AddScore)

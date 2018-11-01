@@ -1,8 +1,8 @@
-let nextTodoId = 0;
+let nextScoreId = 0;
 
-export const addTodo = text => ({
-    type: 'ADD_TODO',
-    id: nextTodoId++,
+export const addScore = text => ({
+    type: 'ADD_SCORE',
+    id: nextScoreId++,
     text
 })
 
@@ -11,8 +11,8 @@ export const setVisibilityFilter = filter => ({
     filter
 })
 
-export const toggleTodo = id => ({
-    type: 'TOGGLE_TODO',
+export const toggleScore = id => ({
+    type: 'TOGGLE_SCORE',
     id
 })
 

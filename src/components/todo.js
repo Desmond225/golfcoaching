@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Todo = ({ text }) => (
+const Score = ({ text }) => (
     <li>
         {text}
     </li>
 )
 
-export default Todo
+export default Score
