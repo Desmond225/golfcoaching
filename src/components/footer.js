@@ -8,10 +8,10 @@ const Footer = () => (
         <FilterLink filter={VisibilityFilter.SHOW_ALL}>
         All
         </FilterLink>
-        <FilterLink filter={VisibilityFilter.SHOW_ACTIVE}>
+        <FilterLink filter={VisibilityFilter.SHOW_OVER_80}>
         Scores over 80
         </FilterLink>
-        <FilterLink filter={VisibilityFilter.SHOW_COMPLETED}>
+        <FilterLink filter={VisibilityFilter.SHOW_UNDER_80}>
         Scores under 80
         </FilterLink>
     </div>

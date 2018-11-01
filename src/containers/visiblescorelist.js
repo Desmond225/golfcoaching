@@ -7,10 +7,10 @@ const getVisibleScores = (scores, filter) => {
     switch(filter) {
         case VisibilityFilter.SHOW_ALL:
         return scores
-        case VisibilityFilter.SHOW_COMPLETED:
-        return scores.filter(t => t.completed)
-        case VisibilityFilter.SHOW_ACTIVE:
-        return scores.filter(t => !t.completed)
+        case VisibilityFilter.SHOW_UNDER_80:
+        return scores.filter(t => t.under80)
+        case VisibilityFilter.SHOW_OVER_80:
+        return scores.filter(t => !t.over80)
         default:
         console.log('oops')
 

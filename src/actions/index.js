@@ -18,6 +18,6 @@ export const toggleScore = id => ({
 
 export const VisibilityFilter = {
     SHOW_ALL: 'SHOW_ALL',
-    SHOW_COMPLETED: 'SHOW_COMPLETED',
-    SHOW_ACTIVE: 'SHOW_ACTIVE'
+    SHOW_UNDER_80: 'SHOW_UNDER_80',
+    SHOW_OVER_80: 'SHOW_OVER_80'
 }
