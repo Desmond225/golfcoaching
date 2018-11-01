@@ -1,6 +1,6 @@
 import React from 'react';
-import AddScore from './containers/addtodo';
-import VisibleTodoList from './containers/visibletodolist'
+import AddScore from './containers/addscore';
+import VisibleTodoList from './containers/visiblescorelist'
 
 
 const App = () => (

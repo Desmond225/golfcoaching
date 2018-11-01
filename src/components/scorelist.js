@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Score from './todo';
+import Score from './score';
 import { toggleScore } from '../actions';
 
 const ScoreList = ({scores }) => (

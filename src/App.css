@@ -1,3 +1,7 @@
+#root {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -54,4 +58,25 @@
   float: right;
   margin-right: 1%;
 
+}
+
+.scoreinputs {
+  color: grey;
+  }
+
+.scoreinputs, input {
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }

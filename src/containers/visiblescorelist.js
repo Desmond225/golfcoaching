@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {toggleScore} from '../actions';
-import ScoreList from '../components/todolist'
+import ScoreList from '../components/scorelist'
 import {VisibilityFilter} from '../actions';
 
 const getVisibleScores = (scores, filter) => {
