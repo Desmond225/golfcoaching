@@ -1,12 +1,13 @@
 import React from 'react';
-import AddScores from './components/addscores';
-import ScoreList from './components/scorelist';
+import AddTodo from './containers/addtodo';
+import VisibleTodoList from './containers/visibletodolist'
+
 
 const App = () => (
   <div>
-        <AddScores />
-        <ScoreList/>
-        {/* <Stats /> */}
+    <AddTodo />
+    <VisibleTodoList />
+
   </div>
 )
 
