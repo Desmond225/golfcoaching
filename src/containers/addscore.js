@@ -14,7 +14,7 @@ const AddScore = ({dispatch}) => {
                 dispatch(addScore(input.value))
                 input.value = ''
             }}>
-                <input type="number" required ref={node => input = node}/>
+                <input type="number" min="59" max="120" required ref={node => input = node}/>
 
                 <button id="button" type="submit">
                     add score

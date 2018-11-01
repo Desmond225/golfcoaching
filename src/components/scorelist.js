@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Score from './score';
-import { toggleScore } from '../actions';
 
-const ScoreList = ({scores }) => (
+const ScoreList = ({scores, toggleScore }) => (
     <ul>
         {scores.map(score => 
             <Score
             key={score.id}
             {...score}
-            // onClick={() => toggleTodo(todo.id)}
+            onClick={() => toggleScore(score.id)}
             />
         )}
     </ul>

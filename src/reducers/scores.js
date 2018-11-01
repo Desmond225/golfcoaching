@@ -10,8 +10,8 @@ const scores = (state = [], action) => {
             }
         ]
         case 'TOGGLE_SCORE':
-        return state
-
+        return state.map(score => (score.id === action.id)
+        ? {...score, completed: !score.completed} : score)
         default: 
         return state
     }
